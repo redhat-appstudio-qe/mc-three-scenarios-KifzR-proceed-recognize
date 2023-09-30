@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-docker-python-rhtap-three-component-scenarios-gpsv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-fmkl-tenant/mc-three-scenarios/devfile-docker-python-rhtap-three-component-scenarios-gpsv@sha256:b26216065ad712cf3d3132a2c8426146e0eb9f2ab633aa60805dc8b5ce24285e
+        name: my-python
+        resources: {}
+status: {}
